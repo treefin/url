@@ -120,7 +120,7 @@ fromString str =
     chompAfterProtocol File (String.dropLeft 7 str)
 
   else if String.startsWith "app://" str then
-    chompAfterProtocol File (String.dropLeft 6 str)
+    chompAfterProtocol App (String.dropLeft 6 str)
 
   else
     Nothing
